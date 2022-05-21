@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="{% static 'main/css/main.css'%}"/>
+</head>
+<body>
+
+<div class="container1">
+<img src="{% static 'main/img/Group1.svg'%}" class="floatRight"/>
+    <a href="WL/"><button class="buttonR" >Я - Зритель</button></a>
+    <div4 class="social">
+    <a href="{% url "social:begin" "google-oauth2" %}"><button class="buttonL">Я - Автор</button></a>
+    </div4>
+    <div2 class="container2"></div2>
+
+</div>
+</body>
+</html>
+
+
+
