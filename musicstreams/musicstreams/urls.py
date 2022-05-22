@@ -23,7 +23,8 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('main.urls'), name='Главная страница'),
-    path('OPCenter/', include('OPCenter.urls')),
+    path('login/', include('allauth.urls')),
+    path('OPCenter/request.user.id/', include('OPCenter.urls')),
     path('WL/', include('WatchLogin.urls'), name='stream'),
 
 
