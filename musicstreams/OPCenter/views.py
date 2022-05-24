@@ -7,9 +7,12 @@ from social_core.pipeline.user import get_username
 from .forms import Load
 from .models import LoadForm
 
+from social_core.pipeline.user import get_username
+
+
 
 def UploadFile(request):
-    form_class=LoadForm
+
     if request.method == 'POST':
         form = Load(request.POST,request.FILES)
         if form.is_valid():
@@ -20,16 +23,23 @@ def UploadFile(request):
         context = {
             'form':form,
         }
-    return render(request,  'OPCenter.html' ,context)
+        USern= request.user.get_username()
+        user_f = request.user.last_name()
+        print(USern, user_f)
+    return render(request,  'OPCenter.html' ,context, USern)
 
 
 
 
 
-def GetUser(request):
-    userN = get_username()
-    print(userN)
-    return render(request, 'OPCenter.html')
+def GetUser(request, username=None):
+    user_obj = request.user.get_username()
+    user_f = request.user.last_name()
+    context = {
+        "object": user_obj
+    }
+    print (user_f,user_obj)
+    return render(request, "OPCenter.html/Name.html", context={})
 
 
 

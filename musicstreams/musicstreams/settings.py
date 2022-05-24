@@ -11,6 +11,9 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 import os
 from pathlib import Path
+from social_core.pipeline.user import get_username
+from django.urls import path
+from .views import GetUser
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -152,7 +155,9 @@ SOCIALACCOUNT_PROVIDERS = {
 }
 
 SITE_ID = 1
-LOGIN_REDIRECT_URL = 'http://127.0.0.1:8000/OPCenter/request.user.id/'
+
+
+LOGIN_REDIRECT_URL = 'http://127.0.0.1:8000/OPCenter/'
 
 # Additional configuration settings
 SOCIALACCOUNT_QUERY_EMAIL = True

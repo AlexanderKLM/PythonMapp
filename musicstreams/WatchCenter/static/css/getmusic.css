@@ -1,0 +1,39 @@
+body {
+    background-color: #362C73;
+}
+.container60 {
+
+            max-width: 100%;
+            max-height: 100vh;
+
+        }
+
+.container61 {
+  position: absolute;
+  width: 994px;
+  height: 66px;
+  left: 366px;
+  top: 507px;
+
+  background: #FFFFFF;
+
+}
+
+.buttonLog2{
+  position: absolute;
+width: 278px;
+height: 68px;
+left: 1360px;
+top: 506px;
+
+background: #0075FF;
+  font-family: 'Gotham Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 44px;
+line-height: 42px;
+text-align: center;
+letter-spacing: 0.07em;
+color: white;
+  border-color: #0075FF;
+}
