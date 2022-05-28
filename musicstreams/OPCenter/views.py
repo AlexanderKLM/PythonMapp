@@ -1,13 +1,10 @@
-from django.shortcuts import render
-from django.views.generic import TemplateView
-from django.contrib.auth.models import User
 
+from django.contrib.auth.models import User
 from django.shortcuts import render, HttpResponse
-from social_core.pipeline.user import get_username
+
 from .forms import Load
 from .models import LoadForm
 
-from social_core.pipeline.user import get_username
 
 
 
@@ -23,23 +20,26 @@ def UploadFile(request):
         context = {
             'form':form,
         }
-        USern= request.user.get_username()
-        user_f = request.user.last_name()
-        print(USern, user_f)
-    return render(request,  'OPCenter.html' ,context, USern)
+
+    return render(request,  'OPCenter.html' ,context)
 
 
 
 
 
-def GetUser(request, username=None):
-    user_obj = request.user.get_username()
-    user_f = request.user.last_name()
+def GetUser(request, user=None):
+    UserN = None
+    if user is not None:
+        UserN = User.get_username()
+        print(UserN)
     context = {
-        "object": user_obj
+        "object": UserN,
     }
-    print (user_f,user_obj)
-    return render(request, "OPCenter.html/Name.html", context={})
+    return render(request, "Name.html", context=context)
 
+def user_page(response, username):
+    username = str(User.objects.get(username=response.user.username))
+    userphoto = username[0:2]
+    return render(response, "OPCenter.html", {"userphoto": userphoto})
 
 

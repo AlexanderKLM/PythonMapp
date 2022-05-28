@@ -1,9 +1,9 @@
-from django.shortcuts import render
+from django.core.paginator import Paginator
+from django.shortcuts import render, get_object_or_404
+from django.contrib.auth.models import User
 
+def user_page(response, username):
+    username = str(User.objects.get(username=response.user.username))
+    userphoto = username[0:2]
+    return render(response, "Name.html", {"userphoto": userphoto})
 
-def GetUser(request, username=None):
-    user_obj = request.user.get_username(username)
-    context = {
-        "object": user_obj
-    }
-    return render(request, "OPCenter.html/Name.html", context={})
