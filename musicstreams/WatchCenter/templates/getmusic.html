@@ -13,12 +13,32 @@
 </head>
 <body>
 <div0 class="container60">
-<div1 class="container61"></div1>
-  <button class="buttonLog2">fuit</button>
-    <form method="post", enctype="multipart/form-data">
-    {% csrf_token %}
-          {{form.as_p}}
-        <input type="submit" class="form-control" value="Загрузить"></form>
+    <div2 class = "container62"><a href="http://127.0.0.1:8000/"><button2 class="bmg">MUSIC STREAMS</button2></a></div2>
+    <div3 class="text1">Введите id видео с YouTube</div3>
+        <div4 class="container61">
+    <input type="text" style="height: 66px;width: 991px;">
+    <button  class="buttonLog2">Добавить</button>
+    <ul></ul>
+  </div4>
 </div0>
 </body>
 </html>
+
+
+<script>
+    let link = ['tQrxFqfm_UY'];
+function addLinks(){
+    let template = link.map(link => `<li>${link}</li>`).join('\n');
+    document.querySelector('ul').innerHTML = template;
+}
+addLinks();
+let btnAdd = document.querySelector('button');
+let input = document.querySelector('input');
+btnAdd.addEventListener('click', () =>{
+    link.push(input.value);
+    input.value = '';
+    addLinks();
+    localStorage.setItem("Links", JSON.stringify(link));
+});
+</script>
+

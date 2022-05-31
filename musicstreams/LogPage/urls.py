@@ -2,9 +2,10 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from .views import UserS
 from . import views
 
 urlpatterns = [
-    path('',views.GetUser, name='post')
 
+    path('', views.GetUser, name='OPC'),
 ]

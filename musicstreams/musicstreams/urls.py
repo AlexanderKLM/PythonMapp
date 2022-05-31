@@ -17,16 +17,14 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-from .views import user_page
 
 
 urlpatterns = [
                   path('admin/', admin.site.urls),
                   path('', include('main.urls'), name='Главная страница'),
                   path('login/', include('allauth.urls')),
-                  path('OPCenter/<str:username>/', user_page, name='post'),
+                  path('OPCenter/<str:username>/', include('OPCenter.urls'), name='OPC'),
                   path('LogPage/', include('LogPage.urls')),
-                  path('WL/', include('WatchLogin.urls'), name='stream'),
                   path('GetMusic/', include('WatchCenter.urls'))
 
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,0 +1,14 @@
+.containerlp {
+    max-width: 100%;
+    max-height: 100vh;
+}
+
+.buttonlp {
+    position: absolute;
+    width: 376px;
+    height: 82px;
+    border-radius: 25px;
+    padding: 20px;
+    background-color: transparent;
+}
+

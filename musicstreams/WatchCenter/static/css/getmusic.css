@@ -18,13 +18,23 @@ body {
   background: #FFFFFF;
 
 }
+.container62 {
+position: absolute;
+width: 1920px;
+height: 135px;
+left: 0px;
+top: 0px;
+
+background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
 .buttonLog2{
   position: absolute;
 width: 278px;
-height: 68px;
-left: 1360px;
-top: 506px;
+height: 66px;
+left: 990px;
+top: 0px;
 
 background: #0075FF;
   font-family: 'Gotham Pro';
@@ -36,4 +46,56 @@ text-align: center;
 letter-spacing: 0.07em;
 color: white;
   border-color: #0075FF;
+}
+
+.container63{
+position: absolute;
+width: 376px;
+height: 82px;
+left: 113px;
+top: 807px;
+border-radius: 25px;
+padding: 20px;
+background-color: transparent;
+}
+
+li {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: -40px;
+    list-style: none;
+}
+
+.text1{
+position: absolute;
+width: 1024px;
+height: 42px;
+left: 366px;
+top: 447px;
+
+font-family: 'Gotham Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 43px;
+line-height: 42px;
+text-align: center;
+letter-spacing: 0.07em;
+
+color: #FFFFFF;
+}
+
+.bmg{
+    position: absolute;
+    width: 500px;
+    height: 66px;
+    left: 710px;
+    top: 30px;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: lightslategrey;
 }

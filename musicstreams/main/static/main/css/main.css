@@ -1,98 +1,119 @@
 body {
-  background: #362C73;
+    background: #362C73;
 }
-.container1 {
-            margin: 0;
-            padding: 0;
-        }
-        .imgbox {
-            display: grid;
-            height: 100%;
-        }
-        .center-fit {
-            max-width: 100%;
-            max-height: 100vh;
-            margin: auto;
-        }
 
-.floatRight{
+.container1 {
+    margin: 0;
+    padding: 0;
+}
+
+.imgbox {
+    display: grid;
+    height: 100%;
+}
+
+.center-fit {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+
+.floatRight {
 
     position: absolute;
-width: 808.5px;
-height: 1079.5px;
-left: 1111px;
-top: 0px;
-}
-.container2{
-position: absolute;
-width: 1920px;
-height: 135px;
-left: 0px;
-top: 104px;
-
-background: #FFFFFF;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 809px;
+    height: 1080px;
+    left: 1111px;
+    top: 0px;
 }
 
-.buttonR{
-  position: absolute;
-width: 476px;
-height: 195px;
-left: 1070px;
-top: 503px;
-background: #FFFFFF;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-family: 'Gotham Pro';
-font-style: normal;
-font-weight: 400;
-font-size: 44px;
-line-height: 42px;
-text-align: center;
-letter-spacing: 0.07em;
-color: #000000;
-opacity: 0.5;
-border: 1px solid #000000;
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.container2 {
+    position: absolute;
+    width: 1920px;
+    height: 135px;
+    left: 0px;
+    top: 104px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.buttonR:hover{
-  opacity: .8;
-  cursor: pointer;
+.buttonR {
+    position: absolute;
+    width: 476px;
+    height: 195px;
+    left: 1070px;
+    top: 503px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: #000000;
+    opacity: 0.5;
+    border: 1px solid #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.buttonL{
-  position: absolute;
-width: 476px;
-height: 195px;
-left: 330px;
-top: 503px;
-background: #FFFFFF;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-family: 'Gotham Pro';
-font-style: normal;
-font-weight: 400;
-font-size: 44px;
-line-height: 42px;
-text-align: center;
-letter-spacing: 0.07em;
-color: #000000;
-opacity: 0.5;
-border: 1px solid #000000;
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.bmm {
+    position: relative;
+    width: 500px;
+    height: 66px;
+    left: 710px;
+    top: 0px;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: lightslategrey;
 }
 
-.buttonL:hover{
-  opacity: .8;
-  cursor: pointer;
+.buttonR:hover {
+    opacity: .8;
+    cursor: pointer;
 }
 
-.container53{
-position: absolute;
-width: 376px;
-height: 82px;
-left: 113px;
-top: 800px;
-
-background: #FFAFFF;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.buttonL {
+    position: absolute;
+    width: 476px;
+    height: 195px;
+    left: 330px;
+    top: 503px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: #000000;
+    opacity: 0.5;
+    border: 1px solid #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+.buttonL:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.container53 {
+    position: absolute;
+    width: 376px;
+    height: 82px;
+    left: 113px;
+    top: 800px;
+
+    background: #FFAFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
